@@ -1,0 +1,26 @@
+#nav, #comments h4 {
+
+background-color: #00a3d3;
+
+}
+
+.Label li:hover, #readmore, #nav3 li a:hover, .readmore {background-color: #00a3d3}
+
+.follow-by-email-inner, #contact-site-form input[type=submit],#contact-site-form--2 input[type=submit] {background: #00a3d3}
+
+.post-body a, .search-results p strong {color: #00a3d3}
+
+#footer-wrapper h2 span {
+
+border-bottom: 4px solid #00a3d3;
+
+}
+#user-login input[type=submit], #search-form input[type=submit], #headlines2 h2 {background-color: #00a3d3;}
+#comments h4:after, #headlines2 h2 {border-top: 1px solid #00a3d3;}
+.com-tab-menu li.selected, #scroll, #user-login-form input[type=submit] {background-color: #00a3d3}
+.comment-form input[type=submit] {background-color:#00a3d3;border: 1px solid #00a3d3;}
+#search-block-form input[type=submit] {background-color: #333333;}
+.pager li > a, .pager li > span {background-color: #00a3d3;}
+#footer-wrapper {border-top: 5px solid #00a3d3;}
+#comments h4:after {border-top: 10px solid #00a3d3;}
+#tag-widget1 h2.title, #user-register-form input[type=submit], #user-login input[type=submit] {background-color: #00a3d3;}

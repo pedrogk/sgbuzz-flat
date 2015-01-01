@@ -1,0 +1,24 @@
+#nav, #comments h4 {
+
+background-color: #e84c3d;
+
+}
+
+.Label li:hover, #readmore a:hover, #nav3 li a:hover, .readmore {background-color: #e84c3d}
+
+.follow-by-email-inner, #contact-site-form input[type=submit],#contact-site-form--2 input[type=submit]{background: #e84c3d}
+
+.post-body a, .search-results p strong {color: #e84c3d}
+
+#footer-wrapper h2 span {
+
+border-bottom: 4px solid #e84c3d;
+
+}
+
+#tag-widget1 h2.title, #user-register-form input[type=submit], #scroll {background-color: #e84c3d;}
+#user-login input[type=submit], #search-form input[type=submit] {background-color: #e84c3d;}
+.pager li > a, .pager li > span , #user-login-form input[type=submit]{background-color: #e84c3d;}
+
+
+

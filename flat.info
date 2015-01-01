@@ -1,0 +1,56 @@
+;Theme info
+name = Flat
+description = Drupal flat theme for magazines.
+package = Core
+version = VERSION
+core = 7.x
+screenshot = 'screenshot.png'
+
+;Core regions
+
+regions[top_menu] = 'Top menu'
+regions[top_bar_right] = 'Top bar right'
+regions[header_ads] = 'Header Ads'
+regions[main_menu] = 'Main menu'
+regions[search] = 'Search'
+regions[headlines] = 'Headlines'
+regions[slider] = 'Slider'
+regions[content] = 'Main Content'
+regions[sidebar_first] = 'Sidebar first'
+regions[sidebar_second] = 'Sidebar second'
+regions[tag_widget1] = 'Tag widget 1'
+regions[tag_widget1_2] = 'Tag widget 1-2'
+regions[tag_post2] = 'Tag post 2'
+regions[tag_post2_last] = 'Tag post 2 last'
+regions[tag_post3] = 'Tag post 3'
+regions[tag_post4] = 'Tag post 4'
+regions[tag_post5] = 'Tag post 5'
+regions[pic_tag_post6] = 'Pictures Tag post'
+regions[content_end] = 'Content end'
+regions[headlines2] = 'Headlines 2'
+regions[bottom_menu] = 'Bottom menu'
+regions[footer_col1] = 'Footer column 1'
+regions[footer_col2] = 'Footer column 2'
+regions[footer_col3] = 'Footer column 3'
+regions[footer_col4] = 'Footer column 4'
+
+;Features (core settings)
+features[] = 'logo'
+features[] = 'name'
+ 
+features[] = 'slogan'
+features[] = 'node_user_picture'
+features[] = 'comment_user_picture'
+features[] = 'comment_user_verification'
+features[] = 'favicon'
+features[] = 'go_to_top_button'
+features[] = 'secondary_menu'
+
+;Breadcrumb
+settings[breadcrumb_display] = 'yes'
+settings[breadcrumb_separator] = ' &#187; '
+settings[breadcrumb_home] = 1
+
+version = "7.x"
+project = "Flat"
+datestamp = "1365027012"

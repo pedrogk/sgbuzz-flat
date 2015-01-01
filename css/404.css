@@ -1,0 +1,58 @@
+#slider-wrapper,#sidebar-wrapper,#sidebar-wrapper2,#carousel,#slid1,#pbt-slider {
+display:none;
+}
+
+#main-wrapper {
+overflow:hidden;
+width:100%;
+margin-left:0;
+float:none;
+margin-right:0;
+}
+
+#error-404 {
+margin:50px 20px 40px 320px;
+autotext-align:center;
+transition:all .8s ease 0;
+width:380px;
+font-family:oswald, Arial, Verdana, sans-serif;
+}
+
+#error-404 span {
+color:#e84c3d;
+font-size:160px;
+font-weight:bold;
+}
+
+.large-heading {
+font-size:60px;
+line-height:1.2em;
+}
+
+.light-heading {
+font-weight:400;
+}
+
+.status-msg-bg {
+background-color:transparent;
+}
+
+#outer-wrapper {
+min-height:0;
+}
+
+.status-msg-border {
+border:0 none;
+background-image:none;
+height:100%;
+}
+
+#sidebar-wrapper,#sidebar-wrapper2 {
+width:100%;
+float:none;
+margin-left:0;
+}
+
+.status-msg-wrap,.status-msg-body {
+height:100%;
+}

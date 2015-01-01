@@ -1,0 +1,8 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+@media (min-width:767px) { .responsive { width: 468px; height: 60px; }}
+@media (min-width:768px) and (max-width:979px) { .responsive { width: 468px; height: 90px;}}
+@media (min-width:980px) { .responsive { width: 728px; height: 90px; margin-left:-108px; }}
+@media (min-width:1025px) { .responsive { width: 728px; height: 90px; margin:0px; }}
