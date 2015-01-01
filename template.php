@@ -4,7 +4,7 @@ global $base_url;
 
 function flat_preprocess_html(&$variables) {
 
-	drupal_add_css('http://fonts.googleapis.com/css?family=Lato:300|Oswald|Archivo+Black|Open+Sans:400,400italic,600', array('type' => 'external'));
+	drupal_add_css('http://fonts.googleapis.com/css?family=Lato:300|Oswald|Archivo+Black|Open+Sans:400,400italic,600,700', array('type' => 'external'));
 	drupal_add_css(base_path().path_to_theme().'/css/font-awesome.min.css', array('type' => 'external'));
 	drupal_add_css(base_path().path_to_theme().'/css/widget_css_2_bundle.css', array('type' => 'external'));
 	drupal_add_css(base_path().path_to_theme().'/css/color-scheme/default.css', array('type' => 'external'));

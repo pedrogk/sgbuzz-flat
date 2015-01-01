@@ -1,0 +1,14 @@
+/**
+ * @file
+ * Display Suite Teaser two col stylesheet.
+ */
+
+.ds-left {
+  float: left;
+  margin-right: 10px;
+  /* Styles for the "left" region go here */
+}
+
+.ds-right {
+  /* Styles for the "right" region go here */
+}
