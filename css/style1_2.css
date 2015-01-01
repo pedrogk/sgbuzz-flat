@@ -4133,27 +4133,18 @@ border-top:0 none
 }
 
 input[type=submit] {
-
+  /*
 	padding:4px 17px;
-
 	fontcolor:#ddd;
-
 	text-transform:uppercase;
-
 	border:none;
-
 	font-size:20px;
-
 	background:url(gradient.png) bottom repeat-x;
-
 	cursor:pointer;
-
 	margin-top:10px;
-
 	float:left;
-
 	overflow:visible
-
+  */
 }
 
 #searchform input[type=submit]:hover {
