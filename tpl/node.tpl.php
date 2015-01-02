@@ -26,7 +26,7 @@ if(!$page){
 
   <article class="post <?php print $classes; ?>" id="<?php print $node->nid; ?>">
 
-    <div itemtype="http://schema.org/BlogPosting" itemscope=""><a class="post_thumb" href="<?php print $node_url; ?>" title="<?php print $title;?>"><?php print theme('image_style', array('path' => $imageone, 'style_name' => 'blog_250x250', 'attributes'=>array('class'=>'post_thumb', 'alt'=>$title, 'width'=>'250', 'height'=>'250')));?></a>
+    <div itemtype="http://schema.org/BlogPosting" itemscope=""><a class="post_thumb" href="<?php print $node_url; ?>" title="<?php print $title;?>"><?php print theme('image_style', array('path' => $node->field_image['und'][0]['uri'], 'style_name' => 'blog_250x250', 'attributes'=>array('class'=>'post_thumb', 'alt'=>$title, 'width'=>'250', 'height'=>'250')));?></a>
 
       <h2><span><a href="<?php print $node_url; ?>" title="<?php print $title;?>"><?php print $title;?></a></span></h2>
 
