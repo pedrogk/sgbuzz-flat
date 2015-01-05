@@ -35,19 +35,19 @@ a, ul.randomnya li, ul.randomnya .overlayx, .Label li, #related-postsx .overlayb
   -ms-transition: all .4s ease-in-out;
   transition: all .4s ease-in-out
 }
-a:link {
-  color: #333;
-  text-decoration: none
-}
-a:visited {
-  color: #333;
-  text-decoration: none
+a:link, a:visited {
+  color: #33b3d3;
 }
 a img {
   border-width: 0
 }
-li {
-  list-style: none
+h1 a, h2 a, h1 a:visited, h2 a:visited {
+  text-decoration: none;
+  color: #404040;
+}
+h1 a:hover, h2 a:hover {
+  text-decoration: underline;
+  color: #6060a0;
 }
 /* Layout Setting
 ----------------------------------------------- */
@@ -1887,7 +1887,8 @@ none;
 /* Navigation2
 ----------------------------------------------- */
 #nav2 {
-  font: normal normal 100% oswald, Tahoma, Helvetica, FreeSans, sans-serif;
+  font-family: Oswald, sans-serif;
+  font-size: 0.85em;
   text-transform: uppercase;
   position: absolute;
   width: 100%;
@@ -1919,7 +1920,7 @@ none;
   height: 22px;
   text-decoration: none;
   color: #ffffff;
-  padding: 0 15px;
+  padding: 0 10px;
 }
 #nav2 li:last-child a {
   border-right: 0 none

@@ -90,8 +90,6 @@ function flat_customize_comment_form(&$form) {
   return $form;
 }
 
-
-
 function flat_preprocess_page(&$vars) {
 	if (isset($vars['node'])) {
 		$vars['theme_hook_suggestions'][] = 'page__'. $vars['node']->type;
@@ -221,31 +219,18 @@ function flat_breadcrumb($variables) {
 
 //custom main menu
 
-function flat_menu_tree__main_menu(array $variables) {
-
-	$str = '';
-/*
-	if (preg_match("/\bsubmenu\b/i", $variables['tree'])){
-       $str .= '<nav id="nav"><ul id="menuhlng1" class="menu">' . $variables['tree']    . '</ul></nav>';
-      } else {
-        $str .= '<ul class="submenu">' . $variables['tree'] . '</ul>';
-      }
-*/
-
-  $str .= '<nav id="nav"><ul id="menuhlng1" class="menu">' . $variables['tree']    . '</ul></nav>';
-
-	return $str;
-
-
-
-}
-
-
 function flat_menu_tree__menu_sgbuzz_menu(array $variables) {
-	$str = '';
-  $str .= '<nav id="nav"><ul id="menuhlng1" class="menu">' . $variables['tree']    . '</ul></nav>';
+  $str = '';
+  if (preg_match("/\bsubmenu\b/i", $variables['tree'])) {
+    $str .= '<nav id="nav"><ul id="menuhlng1" class="menu">' . $variables['tree']    . '</ul></nav>';
+  } else {
+    $str .= '<ul class="submenu">' . $variables['tree'] . '</ul>';
+  }
+
   return $str;
+
 }
+
 
 /**Override Menu theme */
 
@@ -286,4 +271,11 @@ function hook_preprocess_page(&$variables) {
       }
     }
   }
+}
+
+/**
+* Show contextual links on all nodes
+*/
+function flat_node_view_alter( &$build ) {
+  $build['#contextual_links']['node'] = array('node', array($build['#node']->nid));
 }
