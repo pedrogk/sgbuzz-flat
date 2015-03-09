@@ -3,6 +3,11 @@ jQuery(document).ready(function($) {
 	//Main menu
 
 	$('#nav #menuhlng1 li:first').addClass('mhome');
+	if($('#nav ul:first').attr('id') != 'menuhlng1') {
+		$('#nav ul:first').removeClass('submenu');
+		$('#nav ul:first').attr('id','menuhlng1');
+		$('#nav ul:first').addClass('menu');
+	}
 
 	$('#nav #menuhlng1 li.mhome a').text('');
 

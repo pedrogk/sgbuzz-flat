@@ -37,6 +37,13 @@ function flat_form_system_theme_settings_alter(&$form, $form_state) {
       '#collapsed' => FALSE,
   );
 
+  $form['settings']['header']['date_time'] = array(
+      '#title' => t('Date Time Top Bar'),
+      '#type' => 'select',
+      '#options' => array('off' => t('OFF'), 'on' => t('ON')),
+      '#default_value' => theme_get_setting('date_time', 'flat'),
+  );
+
    $form['settings']['header']['text_logo'] = array(
       '#type' => 'textarea',
       '#title' => t('Logo text replace logo image'),
