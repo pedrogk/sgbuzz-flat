@@ -9,28 +9,6 @@ function flat_preprocess_html(&$variables) {
 	drupal_add_css(base_path().path_to_theme().'/css/widget_css_2_bundle.css', array('type' => 'external'));
 	drupal_add_css(base_path().path_to_theme().'/css/color-scheme/default.css', array('type' => 'external'));
 
-	drupal_add_css(base_path().path_to_theme().'/css/style1.css', array('type' => 'external'));
-	drupal_add_css(base_path().path_to_theme().'/css/responsive.css', array('type' => 'external'));
-	drupal_add_css(base_path().path_to_theme().'/css/style2.css', array('type' => 'external'));
-	drupal_add_css(base_path().path_to_theme().'/css/lightbox.css', array('type' => 'external'));
-	drupal_add_css(base_path().path_to_theme().'/css/update.css', array('type' => 'external'));
-
-	//jQuery Google
-	drupal_add_js('https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js', array('type' => 'external', 'scope' => 'header'));
-
-	//Flexslider
-	drupal_add_js(base_path().path_to_theme().'/js/jquery.flexslider.js', array('type' => 'file', 'scope' => 'header'));
-
-	drupal_add_js(base_path().path_to_theme().'/js/carousel.js', array('type' => 'file', 'scope' => 'header'));
-	drupal_add_js(base_path().path_to_theme().'/js/custom.js', array('type' => 'file', 'scope' => 'header'));
-	drupal_add_js(base_path().path_to_theme().'/js/jquery-easing.js', array('type' => 'file', 'scope' => 'header'));
-	drupal_add_css(base_path().path_to_theme().'/css/custom-footer.css', array('type' => 'external'));
-
-	//JS FOOTER
-	drupal_add_js(base_path().path_to_theme().'/js/lightbox.min.js', array('type' => 'file', 'scope' => 'footer'));
-	drupal_add_js(base_path().path_to_theme().'/js/custom-footer.js', array('type' => 'file', 'scope' => 'footer'));
-	drupal_add_js(base_path().path_to_theme().'/js/update.js', array('type' => 'file', 'scope' => 'footer'));
-
 }
 
 // Add css skin
