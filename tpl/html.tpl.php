@@ -118,9 +118,7 @@
 
 		<title><?php print $head_title; ?></title>
 
-
-
-		<?php print $styles; ?><?php print $scripts; ?><?php print $head; ?>
+		<?php print $styles; ?><?php print $head; ?>
 
 		<?php
 
@@ -161,10 +159,9 @@
 			<?php print $page_top; ?><?php print $page; ?><?php print $page_bottom; ?>
 
 		</div>
-
+		<?php print $scripts; ?>
 		<a href="#" id="scroll" title="Scroll to Top" style="display: inline;">Top<span></span></a>
-
+	<?php include('switcher.tpl.php'); ?>
 	</body>
 
 </html>
-
