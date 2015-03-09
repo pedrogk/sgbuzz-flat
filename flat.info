@@ -6,6 +6,26 @@ version = VERSION
 core = 7.x
 screenshot = 'screenshot.png'
 
+; Add a style sheet
+stylesheets[all][] = css/custom-footer.css
+stylesheets[all][] = css/style1.css
+stylesheets[all][] = css/responsive.css
+stylesheets[all][] = css/style2.css
+stylesheets[all][] = css/lightbox.css
+stylesheets[all][] = css/update.css
+
+; Add a script
+scripts[] = js/jquery.1.8.3.min.js
+scripts[] = js/jquery.flexslider.js
+scripts[] = js/carousel.js
+scripts[] = js/custom.js
+scripts[] = js/jquery-easing.js
+scripts[] = js/lightbox.min.js
+scripts[] = js/tinynav.min.js
+scripts[] = js/style-switcher/styleselector.js
+scripts[] = js/custom-footer.js
+scripts[] = js/update.js
+
 ;Core regions
 
 regions[top_menu] = 'Top menu'
@@ -37,7 +57,7 @@ regions[footer_col4] = 'Footer column 4'
 ;Features (core settings)
 features[] = 'logo'
 features[] = 'name'
- 
+
 features[] = 'slogan'
 features[] = 'node_user_picture'
 features[] = 'comment_user_picture'
