@@ -1,4 +1,3 @@
-<?php include('switcher.tpl.php'); ?>
 
 <!-- Footer begin -->
 
