@@ -35,13 +35,13 @@ a, ul.randomnya li, ul.randomnya .overlayx, .Label li, #related-postsx .overlayb
   -ms-transition: all .4s ease-in-out;
   transition: all .4s ease-in-out
 }
-a:link, a:visited {
+a:link {
   color: #33b3d3;
 }
 a img {
   border-width: 0
 }
-h1 a, h2 a, h1 a:visited, h2 a:visited {
+h1 a:link, h2 a:link {
   text-decoration: none;
   color: #404040;
 }
@@ -405,10 +405,12 @@ a.post_thumb img:hover, .post_thumb a img:hover {
   -webkit-transition-duration: 700ms;
 }
 
-.post-body img {
+.post-body img, .post-head-img {
   background-color: #ffffff;
   border: 1px solid #E0E0E0;
-  padding: 4px
+  padding: 4px;
+  margin-bottom: 5px auto;
+  text-align: center;
 }
 .comment-link {
   margin-left: .6em
