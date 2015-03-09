@@ -5,7 +5,7 @@
 		<?php print render($page['top_menu']) ?>
 	</nav>
 	<?php endif ?>
-  
+
 	<?php  if($page['top_bar_right']):?>
 	<div id="top-right">
 		<?php print render($page['top_bar_right']) ?>
@@ -54,8 +54,9 @@
 	<?php endif; ?>
 	<?php  if($page['main_menu']):?>
 
+		<nav id="nav">
 		<?php print render($page['main_menu']) ?>
+	  </nav>
 
 	<?php endif; ?>
 </header> <!-- End header  -->
-
