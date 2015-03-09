@@ -200,7 +200,7 @@ function flat_breadcrumb($variables) {
 function flat_menu_tree__menu_sgbuzz_menu(array $variables) {
   $str = '';
   if (preg_match("/\bsubmenu\b/i", $variables['tree'])) {
-    $str .= '<nav id="nav"><ul id="menuhlng1" class="menu">' . $variables['tree']    . '</ul></nav>';
+    $str .= '<ul id="menuhlng1" class="menu">' . $variables['tree']    . '</ul>';
   } else {
     $str .= '<ul class="submenu">' . $variables['tree'] . '</ul>';
   }
