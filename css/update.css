@@ -314,33 +314,20 @@ ul.social_menu li.abfacebook {
 }
 
 ul.social_menu li a {
-
 	display: block;
-
 	width: 40px;
-
 	height: 33px;
-
 	padding-right: 10px!important;
-
 	position: relative;
-
 	text-decoration: none;
-
 }
 
 #social_menu_animation li a strong {
-
 	opacity: 0;
-
 	-webkit-transition-property: opacity, top;
-
 	-webkit-transition-duration: 300ms;
-
 	-moz-transition-property: opacity, top;
-
 	-moz-transition-duration: 300ms;
-
 }
 
 ul.social_menu li a strong {
@@ -571,9 +558,7 @@ ul.social_menu li {
 #blog-pager {
 
 	margin: 1em 0;
-
 	text-align: center;
-
 	overflow: hidden;
 
 }
@@ -970,8 +955,27 @@ position: inherit;
 margin: 4px 10px 0 0;
 }
 #tag-widget1-2 .blog-widget {margin-top: 10px;}
-ul.tabs.primary li {float:left;padding:5px;}
-ul.tabs.primary {width: 100%;height: 34px;margin-bottom: 15px;line-height: 34px;}
+
+ul.tabs.primary {
+  width: 100%;
+  height: 34px;
+  margin-bottom: 15px;
+  line-height: 34px;
+  list-style: outside none none;
+  border-bottom: 1px solid #B7B7B7;
+  margin: 0px 0px 5px;
+  padding: 3px;
+}
+ul.tabs.primary li {
+  float: left;
+  margin-right: 15px;
+}
+
+ul.tabs.primary li a {
+  text-decoration: none;
+  font-weight: normal;
+}
+
 #user-login-form label{
 width: 100%;
 font-weight: bold;
@@ -1035,4 +1039,38 @@ border-radius:1px;
 border:1px solid #DDD;
 border-bottom-left-radius:3px;
 border-bottom-right-radius:3px;
+}
+.credito {
+  margin-bottom: 10px;
+}
+
+body.page-node-add-sesion-conferencia fieldset.filter-wrapper {
+  display: none;
+}
+
+.node-form {
+  background-color: #ffffff;
+  padding: 15px;
+}
+
+.field-type-datetime, .field-type-text-with-summary, .field-type-text-long, .field-type-list-text, 
+.field-type-list-boolean, .field-type-image, .field-type-link-field {
+    margin: 20px 0px;
+}
+
+form.node-form label {
+    font-weight: 600;
+}
+div.form-type-radios label, div.form-type-checkbox label {
+    font-weight: 400;
+}
+
+div.label-description {
+    font-size: 0.9em;
+    font-style: italic;
+}
+
+.page-title {
+  border-bottom: 1px solid #dddddd;
+  margin-bottom: 15px; 
 }

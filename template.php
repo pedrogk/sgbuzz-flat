@@ -3,13 +3,33 @@
 global $base_url;
 
 function flat_preprocess_html(&$variables) {
-
-	drupal_add_css('http://fonts.googleapis.com/css?family=Lato:300|Oswald|Archivo+Black|Open+Sans:400,400italic,600,700', array('type' => 'external'));
-	drupal_add_css(base_path().path_to_theme().'/css/font-awesome.min.css', array('type' => 'external'));
-	drupal_add_css(base_path().path_to_theme().'/css/widget_css_2_bundle.css', array('type' => 'external'));
-	drupal_add_css(base_path().path_to_theme().'/css/color-scheme/default.css', array('type' => 'external'));
-
+  drupal_add_css('http://fonts.googleapis.com/css?family=Lato:300|Oswald|Archivo+Black|Open+Sans:400,400italic,600,700', array('type' => 'external'));
+  drupal_add_css(base_path().path_to_theme().'/css/font-awesome.min.css', array('type' => 'external'));
+  drupal_add_css(base_path().path_to_theme().'/css/widget_css_2_bundle.css', array('type' => 'external'));
+  drupal_add_css(base_path().path_to_theme().'/css/color-scheme/default.css', array('type' => 'external'));
 }
+
+function flat_theme($existing, $type, $theme, $path) {
+  return array(
+    'sesion_conferencia_node_form' => array(
+      'template' => 'tpl/sesion-conferencia-node-form',
+      'render element' => 'form'
+    ),
+  );
+}
+
+function flat_preprocess_sesion_conferencia_node_form(&$variables) {
+  // nodeformcols is an alternative for this solution.
+  if (!module_exists('nodeformcols')) {
+    $variables['sidebar'] = array();   // Put taxonomy fields in sidebar.
+    $variables['sidebar'][] = $variables['form']['field_tags'];
+    hide($variables['form']['field_tags']);
+    // Extract the form buttons, and put them in independent variable.
+    $variables['buttons'] = $variables['form']['actions'];
+    hide($variables['form']['actions']);
+  }
+}
+
 
 // Add css skin
 
@@ -22,15 +42,15 @@ if(!empty($setting_skin)) {
 }
 
 $css_skin = array(
-	'#tag' => 'link', // The #tag is the html tag - <link />
-	'#attributes' => array( // Set up an array of attributes inside the tag
-	'href' => $base_url.'/'.path_to_theme().$skin_color,
-	'rel' => 'stylesheet',
-	'type' => 'text/css',
-	'id' => 'skin',
-	'data-baseurl'=>$base_url.'/'.path_to_theme()
-	),
-	'#weight' => 1,
+  '#tag' => 'link', // The #tag is the html tag - <link />
+  '#attributes' => array( // Set up an array of attributes inside the tag
+    'href' => $base_url.'/'.path_to_theme().$skin_color,
+    'rel' => 'stylesheet',
+    'type' => 'text/css',
+    'id' => 'skin',
+    'data-baseurl'=>$base_url.'/'.path_to_theme()
+    ),
+    '#weight' => 1,
 );
 
 drupal_add_html_head($css_skin, 'skin');
@@ -112,7 +132,7 @@ function flat_css_alter(&$css) {
 
 function flat_form_alter(&$form, &$form_state, $form_id) {
 
-	if ($form_id == 'search_block_form') {
+  if ($form_id == 'search_block_form') {
 		$form['search_block_form']['#title_display'] = 'invisible'; // Toggle label visibilty
 		$form['search_block_form']['#default_value'] = t('Search'); // Set a default value for the textfield
 		$form['search_block_form']['#attributes']['id'] = array("mod-search-searchword");
@@ -122,9 +142,7 @@ function flat_form_alter(&$form, &$form_state, $form_id) {
 		//unset($form['actions']['submit']);
 
 		unset($form['search_block_form']['#title']);
-
 		$form['search_block_form']['#attributes']['onblur'] = "if (this.value == '') {this.value = 'Search';}";
-
 		$form['search_block_form']['#attributes']['onfocus'] = "if (this.value == 'Search') {this.value = '';}";
 
 	}

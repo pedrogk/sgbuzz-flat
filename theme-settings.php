@@ -4,17 +4,15 @@ function flat_form_system_theme_settings_alter(&$form, $form_state) {
 
   $theme_path = drupal_get_path('theme', 'flat');
   $form['settings'] = array(
-      '#type' => 'vertical_tabs',
-      '#title' => t('Theme settings'),
-      '#weight' => 2,
-      '#collapsible' => TRUE,
-      '#collapsed' => FALSE,
-	  '#attached' => array(
-					'css' => array(drupal_get_path('theme', 'flat') . '/css/drupalet_base/admin.css'),
-					'js' => array(
-						drupal_get_path('theme', 'flat') . '/js/drupalet_admin/admin.js',
-					),
-			),
+    '#type' => 'vertical_tabs',
+    '#title' => t('Theme settings'),
+    '#weight' => 2,
+    '#collapsible' => TRUE,
+    '#collapsed' => FALSE,
+    '#attached' => array(
+      'css' => array(drupal_get_path('theme', 'flat') . '/css/drupalet_base/admin.css'),
+      'js' => array(drupal_get_path('theme', 'flat') . '/js/drupalet_admin/admin.js',),
+    ),
   );
 
   $form['settings']['general_setting'] = array(
